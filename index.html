@@ -128,12 +128,12 @@
         <label for="">apellido paterno</label><br>
         <input type="text" value="perez" disabled><br>
         <label for="">apellido materno</label><br>
-        <input type="text" value="pereira" size="100"><br>
+        <input type="text" value="pereira" size="100" placeholder="escribe algo prro" minlength="3" maxlength="10"><br>
         <input type="submit"><br><br><br>
 
         <!--password-->
         <label for="">password</label><br>
-        <input type="password"><br><br><br>
+        <input type="password" required><br><br><br>
         
         <!--email-->
         <label for="">email</label><br>
@@ -175,9 +175,9 @@
 
         <!--telefono-->
         <strong><label for="">telefono</label><br></strong>
-        <input type="number" id="txtnumtelefono">
+        <input type="number" id="txtnumtelefono" min="5" max="30">
         <label for="txtnumtelefono">primer telefono</label><br>
-        <input type="search" id="txtsearchtelefono">
+        <input type="search" id="txtsearchtelefono" pattern="[0-3][3-5]{1}-[0-9][0-9][0-9]-[0-9][0-9][0-9][0-5]">
         <label for="txtsearchtelefono">otro telefono</label><br>
 
         <!--semana-->
