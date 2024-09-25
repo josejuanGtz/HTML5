@@ -3,15 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS External-->
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     
     <!--CSS Internal-->
+    
     <style>
-        
+        /*Simple Selector: se aplica a todas las etiquetas, en este caso se aplica a todas las h2 
+        cuando se pone * la propiedad se aplica a todos los elementos del html
+        */
+        *{
+            color: green;
+        }
         h2{
             color: blue;
-            background-color: coral;
+            background-color: rgb(80, 232, 255);
+        }
+        /*por clase*/
+        .h2red{
+            color: red;
+            background-color: pink;
+        }
+        /* por id*/
+        #h2brown{
+            color: brown;
+            background-color: bisque;
         }
     </style>
 </head>
@@ -19,6 +36,10 @@
     <!--CSS In line-->
     <h1 style="color: aqua; background-color: rgb(42, 165, 65);">prrete</h1>
     <h2>otro prrete</h2>
+    <h2 class="h2red">otro prrete</h2>
+    <h2 id="h2brown">otro prrete</h2>
     <h3>formato de hoja css</h3>
+    <h4>otro prrete</h4>
+    <h5>otro prrete</h5>
 </body>
 </html>
