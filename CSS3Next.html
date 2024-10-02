@@ -18,25 +18,114 @@
         z-index: -1;
     }
 
-    div{
-        width: 400px;
+    #div1{
+        width: 300px;
         height: 200px;
         background-color: green;
-        overflow: hidden;
+        overflow: scroll;
     }
-
+    /*selectores varios*/
     .group{
         display: inline-flex;
     }
-    
+    .only{
+        background-color: pink;
+    }
+    #seccion1{
+        float: right;
+    }
+    /*pseudo clases 1*/
+    div ul li:not(.prro)
+    {
+        background-color: green;
+    }
+    /*pseudo clases 2*/
+    input{
+        outline: none;
+    }
+    input:focus
+    {
+        background-color: pink;
+        color: indigo;
+    }
+    input[type="checkbox"]:checked
+    {
+        box-shadow: 0 0 10px 5px red;
+    }
+    input:disabled
+    {
+        background-color:blue;
+    }
+    input:required{
+        border:2px solid green;
+    }
+    input:invalid{
+        box-shadow: 0 0 5px 5px red;
+    }
+    .textinput:read-only{
+        color: gray;
+        background-color: greenyellow;
+    }
+    /*pseudo elementos*/
+    h1::before{
+        content: "pre";
+        color: aqua;
+        font-size: 20px;
+    }
+    h1::after{
+        content: "post";
+        color: gold;
+        font-size: 20px;
+    }
+    h1::selection{
+        color: indigo;
+        background-color: peru;
+        font-size: 30px;
+    }
+    ::marker{
+        color: cornflowerblue;
+    }
+    input::placeholder{
+        color: lightcoral;
+    }
 </style>
 
 <body>
     
+    <form action="">
+        <label for="">nombre</label>
+        <input type="text" class="textinput" readonly value="nombre del usuario"><br>
+        <label for="">usuario</label>
+        <input type="text" disabled><br>
+        <label for="">contraseña</label>
+        <input type="password" required placeholder="contraseña"><br>
+        <label for="">correo</label>
+        <input type="email"><br>
+        <label for="">hombre</label>
+        <input type="checkbox"><br>
+        <label for="">mujer</label>
+        <input type="checkbox"><br>
+        <label for="">numero</label>
+        <input type="number" required><br>
+        <label for="">enviar</label>
+        <input type="submit"><br>
+    </form><br><br>
+
+    <div>
+        <ul>
+            <li>primero</li>
+            <li class="prro">segundo</li>
+            <li>tercero</li>
+            <li>cuarto</li>
+            <li>quinto</li>
+            <li>sexto</li>
+        </ul>
+    </div><br><br>
+
     <div class="group">
 
     
-    <div> Lorem ipsum dolor sapiente repellat architecto praesentium inventore ducimus molestias optio quis sed veniam officiis 
+    <div id="div1"> Lorem ipsum dolor sapiente repellat architecto praesentium inventore ducimus molestias optio quis sed veniam officiis 
         totam similique corporis facere magni recusandae eos animi, incidunt autem, odit repudiandae? 
         Fuga excepturi quae animi laboriosam nisi, tempora, esse assumenda inventore dolore error ex est debitis. 
         Vitae vel incidunt impedit asperiores ipsam eius sapiente veniam facere veritatis laboriosam esse quae 
@@ -45,7 +134,7 @@
         iure consequuntur enim tenetur? Amet?
     </div>
 
-    <div> Lorem ipsum dolor sapiente repellat architecto praesentium inventore ducimus molestias optio quis sed veniam officiis 
+    <div id="div1"> Lorem ipsum dolor sapiente repellat architecto praesentium inventore ducimus molestias optio quis sed veniam officiis 
         totam similique corporis facere magni recusandae eos animi, incidunt autem, odit repudiandae? 
         Fuga excepturi quae animi laboriosam nisi, tempora, esse assumenda inventore dolore error ex est debitis. 
         Vitae vel incidunt impedit asperiores ipsam eius sapiente veniam facere veritatis laboriosam esse quae 
@@ -54,7 +143,7 @@
         iure consequuntur enim tenetur? Amet?
     </div>
 
-    <div> Lorem ipsum dolor sapiente repellat architecto praesentium inventore ducimus molestias optio quis sed veniam officiis 
+    <div id="div1"> Lorem ipsum dolor sapiente repellat architecto praesentium inventore ducimus molestias optio quis sed veniam officiis 
         totam similique corporis facere magni recusandae eos animi, incidunt autem, odit repudiandae? 
         Fuga excepturi quae animi laboriosam nisi, tempora, esse assumenda inventore dolore error ex est debitis. 
         Vitae vel incidunt impedit asperiores ipsam eius sapiente veniam facere veritatis laboriosam esse quae 
@@ -63,7 +152,7 @@
         iure consequuntur enim tenetur? Amet?
     </div>
 
-    <div> Lorem ipsum dolor sapiente repellat architecto praesentium inventore ducimus molestias optio quis sed veniam officiis 
+    <div id="div1"> Lorem ipsum dolor sapiente repellat architecto praesentium inventore ducimus molestias optio quis sed veniam officiis 
         totam similique corporis facere magni recusandae eos animi, incidunt autem, odit repudiandae? 
         Fuga excepturi quae animi laboriosam nisi, tempora, esse assumenda inventore dolore error ex est debitis. 
         Vitae vel incidunt impedit asperiores ipsam eius sapiente veniam facere veritatis laboriosam esse quae 
@@ -76,10 +165,22 @@
     <br><br>
     
 
+    <div class="only">
+        <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis officia itaque atque enim maiores 
+            similique ratione explicabo provident saepe, doloribus ad nihil sit quod, at culpa, in dignissimos. Modi, ex.
+        </h1>
+        <h1 d="seccion1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet necessitatibus iure vitae ex blanditiis unde aliquam 
+            officia enim deleniti, minus ducimus rem sapiente esse suscipit quae sit porro. Enim, quos.
+        </h1>
+    </div><br><br>
+    
+    
     <img src="img/1200_800.webp" alt="">
+
     <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet necessitatibus iure vitae ex blanditiis unde aliquam 
         officia enim deleniti, minus ducimus rem sapiente esse suscipit quae sit porro. Enim, quos.
     </h1>
+    
     
 </body>
 </html>
