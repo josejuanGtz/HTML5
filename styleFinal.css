@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Edu AU VIC WA NT Guides", cursive;
+    font-optical-sizing: auto;
+    font-weight: 12;
+    font-style: normal;
+}
+#hero-img{
+    background-image: url(img/food1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero-wrapper{
+    color: aliceblue;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.hero-wrapper h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: gold;
+}
+.hero-wrapper p{
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.hero-wrapper .form-code{
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.hero-wrapper .form-code input{
+    border-radius: 10px;
+    width: 500px;
+    height: 50px;
+    outline: none;
+    border: none;
+}
+.hero-wrapper .form-code input::placeholder{
+    padding-left: 30px;
+}
+.hero-wrapper .form-code button{
+    width: 100px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 180px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    font-weight: bold;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.hero-wrapper .form-code button:hover{
+    background-color: transparent;
+    border: 2px solid black;
+}
+.product{
+width: 80%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 50px;
+}
+.product-list{
+float: left;
+width: 33.33%;
+}
+.product-list h2{
+    text-align: center;
+}
